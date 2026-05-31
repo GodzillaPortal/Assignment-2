@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" id="recommend_html">
+<head>
+    <title>Recommend</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./Design/CSS/desktop.css">
+    <link rel="stylesheet" href="./Design/CSS/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="./Design/CSS/mobile.css" media="screen and (max-width: 767px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Design/JS/script.js" defer></script>
+    <style>
+        body {
+            background-image: url("./Design/Images/recommend_bg.jpg");
+        }
+    </style>
+</head>
+<body>
+    <header id="recommend_header">
+        <h1>Where should I eat?</h1>
+        <br><i>Let US (yes us) pick where you eat tonight!</i>
+        <hr>
+    </header>
+    <nav id="recommend_nav">
+        <p><button onclick="document.location='index.html'">Menu</button> <button onclick="document.location='restaraunts.html'">Restaraunts</button> <button class="active_page" onclick="document.location='recommend.html'">Recommended Places</button> <button onclick="document.location='register.html'">Sign Up</button> <button onclick="document.location='reservation.html'">Reservations</button></p>
+        <hr>
+    </nav>
+    <main id="recommend_main">
+        <section>
+            <fieldset>
+            <h2>What are your dietary preferences?</h2>
+              <input type="checkbox" name="Dietary" value="Vegan" 
+            >Vegan
+            <br>
+            <input type="checkbox" name="Dietary" value="Vegetarian" 
+            >Vegetarian
+            <br>
+            <input type="checkbox" name="Dietary" value="Gluten Free" 
+            >Gluten Free
+            <br>
+            <input type="checkbox" name="Dietary" value="Dairy Free" 
+            >Dairy Free
+            <br>
+            <input type="checkbox" name="Dietary" value="Halal" 
+            >Halal
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>How Much Can You Spend Tonight?</h2>
+            <input type="range" min="1" max="5" id="recommend_slider">
+            <br><span id="slider_output"></span>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>What Is The Occasion?</h2>
+            <select id="occasion_select">
+                <option><i>Select Option</i></option>
+                <option value="Family Get Together">Family Get Together</option>
+                <option value="Date">Date</option>
+                <option value="Business">Business</option>
+                <option value="Just cos!!!!">Just cos!!!!</option>
+            </select>
+            </fieldset>
+        </section>
+        <section>
+            <h2>Based On Your Input, We Think...</h2>
+            <br>
+            <ul id="recommendation"></ul>
+            <br>
+        </section>
+    </main>
+    <footer id="recommend_footer">
+        <br><em>Background image source: Vecteezy</em>
+    </footer>
+</body>
+</html>
+

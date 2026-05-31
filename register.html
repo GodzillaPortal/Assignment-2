@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" id="register_html">
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./Design/CSS/desktop.css">
+    <link rel="stylesheet" href="./Design/CSS/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="./Design/CSS/mobile.css" media="screen and (max-width: 767px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Design/JS/script.js" defer></script>
+    <style>
+        body {
+            background-image: url("./Design/Images/register_bg.jpg");
+        }
+    </style>
+</head>
+<body>
+    <header id="register_header">
+        <h1>Sign up to FoodFindr.Net!</h1>
+        <br><i>Keep everything secure and in one place</i>
+        <hr>
+    </header>
+    <nav id="register_nav">
+        <p><button onclick="document.location='index.html'">Menu</button> <button onclick="document.location='restaraunts.html'">Restaraunts</button> <button onclick="document.location='recommend.html'">Recommended Places</button> <button class="active_page" onclick="document.location='register.html'">Sign Up</button> <button onclick="document.location='reservation.html'">Reservations</button></p>
+        <hr>
+    </nav>
+    <form id="register_form">
+    <main id="register_main">
+        <section>
+            <fieldset>
+            <h2>Username</h2>
+            <input type="text" name="Username" id="Username" size="20" placeholder="JoeMama123">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Email</h2>
+            <input type="text" name="Email" id="Email" size="20" placeholder="joemama123@hotmail.com">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Phone Number</h2>
+            <input type="text" name="Phone" id="Phone" size="20" placeholder="+61 123 456 789">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Password</h2>
+            <input type="password" name="Password" id="Password" size="20" placeholder="Password">
+            <br>
+            <br><input type="password" name="Password_Confirm" id="Password_Confirm" size="20" placeholder="Confirm Password">
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Gender</h2>
+            <input type="radio" name="Gender" value="Male"
+            >Male
+            <br>
+            <input type="radio" name="Gender" value="Female"
+            >Female
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Dietary Preferences</h2>
+            <input type="checkbox" name="Dietary" value="Vegan" 
+            >Vegan
+            <br>
+            <input type="checkbox" name="Dietary" value="Vegetarian" 
+            >Vegetarian
+            <br>
+            <input type="checkbox" name="Dietary" value="Gluten Free" 
+            >Gluten Free
+            <br>
+            <input type="checkbox" name="Dietary" value="Dairy Free" 
+            >Dairy Free
+            <br>
+            <input type="checkbox" name="Dietary" value="Halal" 
+            >Halal
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Country/Region</h2>
+            <input type="text" name="Country" id="Country" size="20" placeholder="Uzbekistan">
+            <br>
+            <br><input type="text" name="Region" id="Region" size="20" placeholder="Qaraqalpaqstan Avtonom">
+            </fieldset>
+        </section>
+    </main>
+    <footer id="register_footer">
+        <br>
+        <p><button type="submit">Submit</button></p>
+    </footer>
+    </form>
+    <aside id="register_aside">
+        <br><em>Background image source: Vecteezy</em>
+    </aside>
+</body>
+</html>

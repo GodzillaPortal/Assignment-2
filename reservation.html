@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" id="reservation_html">
+<head>
+    <title>Reservation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./Design/CSS/desktop.css">
+    <link rel="stylesheet" href="./Design/CSS/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="./Design/CSS/mobile.css" media="screen and (max-width: 767px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Design/JS/script.js" defer></script>
+     <style>
+        body {
+            background-image: url("./Design/Images/reservation_bg.jpg");
+        }
+    </style>
+</head>
+<body>
+    <header id="reservation_header">
+        <h1>Make A Booking</h1>
+        <br><i>Lets get you locked and loaded!</i>
+        <hr>
+    </header>
+    <nav id="reservation_nav">
+        <p><button onclick="document.location='index.html'">Menu</button> <button onclick="document.location='restaraunts.html'">Restaraunts</button> <button onclick="document.location='recommend.html'">Recommended Places</button> <button onclick="document.location='register.html'">Sign Up</button> <button class="active_page" onclick="document.location='reservation.html'">Reservations</button></p>
+        <hr>
+    </nav>
+    <main id="reservation_main">
+        <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+        <section>
+            <fieldset>
+            <h2>Full Name</h2>
+            <input type="text" name="Full_Name" size="20" placeholder="Joseph Mamamia">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Email</h2>
+            <input type="text" name="Email" size="20" placeholder="joemama123@hotmail.com">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Phone Number</h2>
+            <input type="text" name="Phone" size="20" placeholder="+61 123 456 789">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Restaraunt Selection</h2>
+            <select name="Restaraunt_Selected" id="restaraunt_select">
+                <option><i>Select Option</i></option>
+                <option value="Los Pollos Hermanos">Los Pollos Hermanos</option>
+                <option value="Pizza Planet">Pizza Planet</option>
+                <option value="Freddy Fazbear's Pizzaria">Freddy Fazbear's Pizzaria</option>
+                <option value="Flaming Dragon">Flaming Dragon</option>
+                <option value="Nigels Kebabs">Nigels Kebabs</option>
+                <option value="Papa Johns Place">Papa Johns Place</option>
+            </select>
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Reservation Date</h2>
+            <input type="date" name="Reservation_Date">
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Number of People</h2>
+            <input type="number" name="Number_Of_People">
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Special Requests <i>(Optional)</i></h2>
+            <input type="text" name="Request" size="20" placeholder="Bake pizza halway please, I like the other side raw.">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Deposit Ammount</h2>
+            <input type="text" name="Deposit" id="deposit_input">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Deposit Method</h2>
+            <input type="radio" name="Deposit_Method" value="Online"
+            >Online
+            <br>
+            <input type="radio" name="Deposit_Method" value="Voucher"
+            >Voucher
+            </fieldset>
+        </section>
+         <section>
+            <fieldset>
+            <h2>Voucher Code</h2>
+            <input type="text" name="Voucher_Code" size="20" placeholder="XXXXXXXXXX">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Card Details</h2>
+            Card Number: <input type="text" name="Card_Number" size="20" placeholder="1234 5678 9123 4567">
+            <br>
+            <br>Card Holder: <input type="text" name="Card_Holder" size="20" placeholder="Johnothan Graham">
+            <br>
+            <br>Expiration Date: <input type="text" name="Card_Exp" size="20" placeholder="05/28"> CVV: <input type="text" name="Card_CVV" size="20" placeholder="567">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <h2>Billing Email</h2>
+            <input type="text" name="Billing_Email" size="20" placeholder="joemama123@hotmail.com">
+            <input type="checkbox" name="Reuse_Address" value="Reuse_Address">Re-use previous E-Mail?
+            </fieldset>
+        </section>
+    <footer id="reservation_footer">
+        <p><button type="submit">Submit</button></p>
+    </footer>
+    </form>
+    </main>
+    <aside id="reservation_aside">
+        <br><em>Background image source: Wallpaper Safari</em>
+    </aside>
+</body>
+</html>

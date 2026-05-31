@@ -1,0 +1,154 @@
+/*INDEX*/
+#index_html{
+    background-color: black;
+}
+
+body{
+    background-size: cover;
+    background-position: center 100%;
+}
+
+#index_header{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+#index_nav{
+    text-align: center;
+}
+
+#index_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#index_footer{
+    text-align: center;
+    color: white;
+}
+
+#index_aside{
+    color: white;
+}
+
+.active_page {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
+
+/*RESTARAUNTS*/
+#restaraunts_html{
+    background-color: black;
+}
+
+#restaraunts_header{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+#restaraunts_nav{
+    text-align: center;
+}
+
+.grid{
+    flex-direction: column;
+}
+
+.card{
+    width: 48%;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+
+/*RECOMMED*/
+#recommend_html{
+    background-color: black;
+}
+
+#recommend_header{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+#recommend_nav{
+    text-align: center;
+}
+
+#recommend_main{
+    color: white;
+}
+
+#recommend_footer{
+    color: white;
+}
+
+
+/*REGISTER*/
+#register_html{
+    background-color: black;
+}
+
+#register_header{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+#register_nav{
+    text-align: center;
+}
+
+#register_main{
+    color: white;
+}
+
+#register_footer{
+    text-align: center;
+}
+
+#register_aside{
+    color: white;
+}
+
+
+/*RESERVATION*/
+#reservation_html{
+    background-color: black;
+}
+
+#reservation_header{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+#reservation_nav{
+    text-align: center;
+}
+
+#reservation_main{
+    color: white;
+}
+
+#reservation_footer{
+    text-align: center;
+}
+
+#reservation_aside{
+    color: white;
+}
